@@ -25,9 +25,8 @@ jobs:
         run: |
           cd example
           sudo apt-get install yarn
-          yarn --version
-          yarn
-          yarn start
+          npm install 
+          npm start
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
